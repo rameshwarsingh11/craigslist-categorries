@@ -4,20 +4,13 @@
 package Sample;
 
 /**
- * @author Rmeshwar
+ * @author Rameshwar Singh
  *
  */
 public class Category {
-	
-	private  String categryName;
-	private String webLink ;
 
-	/**
-	 * 
-	 */
-	public Category() {
-		// TODO Auto-generated constructor stub
-	}
+	private String categryName;
+	private String webLink;
 
 	/**
 	 * @return the categryName
@@ -27,7 +20,8 @@ public class Category {
 	}
 
 	/**
-	 * @param categryName the categryName to set
+	 * @param categryName
+	 *            the categryName to set
 	 */
 	public void setCategryName(String categryName) {
 		this.categryName = categryName;
@@ -41,7 +35,8 @@ public class Category {
 	}
 
 	/**
-	 * @param webLink the webLink to set
+	 * @param webLink
+	 *            the webLink to set
 	 */
 	public void setWebLink(String webLink) {
 		this.webLink = webLink;

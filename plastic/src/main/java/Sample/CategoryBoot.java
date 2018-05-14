@@ -14,10 +14,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * Spring boot REST API to do search on craigslist and retrieve results.
+ * 
+ * @author Rameshwar
+ *
+ */
 @RestController
 @SpringBootApplication
 public class CategoryBoot {
-
+	/**
+	 * GET method to provide the categories listed on https://toronto.craigslist.ca
+	 * in JSON.
+	 * 
+	 * @return List of Categories in JSON.
+	 * @throws IOException
+	 */
 	@RequestMapping(value = "/categories", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
 	public List<Category> categorySearch() throws IOException {
@@ -43,6 +55,12 @@ public class CategoryBoot {
 		return cat;
 	}
 
+	/**
+	 * Spring boot starter method.
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(CategoryBoot.class, args);
 	}
