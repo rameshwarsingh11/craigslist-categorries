@@ -45,11 +45,17 @@ public class CategoryBoot {
 				Elements links = doc.select("ul li a");
 				for (Element link : links) {
 					Category categoryObj = new Category();
+					if (null!=link.attr("href") && !link.attr("href").contains("http"))
+					{
+						categoryObj.setWebLink(url+link.attr("href"));
+					}
+					else
+					{
 					categoryObj.setWebLink(link.attr("href"));
-					categoryObj.setCategryName(link.text());
+					}
+					categoryObj.setCategoryName(link.text());
 					cat.add(categoryObj);
 				}
-
 			}
 		}
 		return cat;

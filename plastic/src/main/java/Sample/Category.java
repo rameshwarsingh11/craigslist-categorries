@@ -9,22 +9,22 @@ package Sample;
  */
 public class Category {
 
-	private String categryName;
+	private String categoryName;
 	private String webLink;
 
 	/**
 	 * @return the categryName
 	 */
-	public String getCategryName() {
-		return categryName;
+	public String getCategoryName() {
+		return categoryName;
 	}
 
 	/**
 	 * @param categryName
 	 *            the categryName to set
 	 */
-	public void setCategryName(String categryName) {
-		this.categryName = categryName;
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
 
 	/**

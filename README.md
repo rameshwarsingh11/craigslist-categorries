@@ -25,11 +25,9 @@ On hitting the URL : http://127.0.0.1:8087/categories  below method is executed.
 
 
   Sample response :
-  [{"categoryName":"activities","webLink":"/d/activity-partners/search/act"},
-  {"categoryName":"artists","webLink":"/d/artists/search/ats"},
-  {"categoryName":"childcare","webLink":"/d/childcare/search/kid"},
-  {"categoryName":"classes","webLink":"/d/classes/search/cls"},
-  {"categoryName":"events","webLink":"/d/events/search/eve"},
+  [{"categoryName":"activities","webLink":"https://toronto.craigslist.ca/d/activity-partners/search/act"},
+  {"categoryName":"artists","webLink":"https://toronto.craigslist.ca/d/artists/search/ats"},
+  {"categoryName":"childcare","webLink":"https://toronto.craigslist.ca/d/childcare/search/kid"},
   {"categoryName":"travel","webLink":"https://forums.craigslist.org/?areaID=25&forumID=42"},
   {"categoryName":"tv","webLink":"https://forums.craigslist.org/?areaID=25&forumID=98"},
   {"categoryName":"vegan","webLink":"https://forums.craigslist.org/?areaID=25&forumID=2400"},
