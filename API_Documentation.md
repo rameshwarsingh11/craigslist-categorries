@@ -22,6 +22,10 @@ GET http://localhost:8089/categories
 http://localhost:8089/categories
 Spring boot based REST API to retreive craigslist categories
 
+Endpoint 1:
 curl --request GET \
   --url http://localhost:8089/categories
-  
+
+Endpoint 2:
+curl --request GET \
+  --url http://localhost:8089/categories/{categoryName}

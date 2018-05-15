@@ -15,6 +15,8 @@ Instructions :
 
 Landing API Method : categorySearch
 
+1. Endpoint /categories
+
 On hitting the URL : http://127.0.0.1:8087/categories  below method is executed. This API is GET based and produces JSON response.
 
 @RequestMapping(value = "/categories", method = RequestMethod.GET, produces = "application/json")
@@ -33,3 +35,20 @@ On hitting the URL : http://127.0.0.1:8087/categories  below method is executed.
   {"categoryName":"vegan","webLink":"https://forums.craigslist.org/?areaID=25&forumID=2400"},
   {"categoryName":"words","webLink":"https://forums.craigslist.org/?areaID=25&forumID=7000"},
   {"categoryName":"writing","webLink":"https://forums.craigslist.org/?areaID=25&forumID=27"}]
+
+
+2. Endpoint /categories/{categoryName}
+
+On hitting the URL : http://127.0.0.1:8087/categories/{categoryName}  below method is executed. This API is GET based and produces JSON response.
+
+@RequestMapping(value = "/categories/{categoryName}", method = RequestMethod.GET, produces = "application/json")
+	@ResponseBody
+	public Category getCategoryInfo(@PathVariable String categoryName) throws IOException {
+	{
+		//
+	}
+
+http://127.0.0.1:8087/categories/politics
+
+  Sample response :
+  {"categoryName":"politics","webLink":"https://forums.craigslist.org/?areaID=25&forumID=20"}
