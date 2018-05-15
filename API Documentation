@@ -1,6 +1,6 @@
-Complete API documentation can be found here : https://documenter.getpostman.com/view/4362116/craigslist-api-to-do-search-and-provide-results/RW83PXHq
+Craigslist api to do search and provide results
 
-craigslist api to do search and provide results
+Complete API documentation can be found here : https://documenter.getpostman.com/view/4362116/craigslist-api-to-do-search-and-provide-results/RW83PXHq
 
 #Introduction
 This is a REST based Spring boot API which generates few categories on the fly along with their respective web links in JSON response.
@@ -22,3 +22,6 @@ GET http://localhost:8089/categories
 http://localhost:8089/categories
 Spring boot based REST API to retreive craigslist categories
 
+curl --request GET \
+  --url http://localhost:8089/categories
+  
